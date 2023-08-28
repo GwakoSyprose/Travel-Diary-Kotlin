@@ -125,7 +125,7 @@ class CreateDiaryFragment : InjectionFragment(R.layout.add_diary_entry) {
         var isValid = true
         fieldsToValidate.forEach {
             if (it.editText!!.text.isEmpty()) {
-                it.error = "This value is field"
+                it.error = "This value is required."
                 isValid = false
             }
         }

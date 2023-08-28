@@ -8,10 +8,6 @@
             app:actionViewClass="android.widget.SearchView"
             app:showAsAction="always" />
 
-<!--    <item-->
-<!--            android:id="@+id/sort"-->
-<!--            android:title="Add"-->
-<!--            app:showAsAction="never" />-->
     <item
         android:id="@+id/logout"
         android:title="Logout"
