@@ -3,6 +3,8 @@ package com.example.mytraveldiary.ui.create
 import android.app.Activity.RESULT_OK
 import android.app.DatePickerDialog
 import android.content.Intent
+import android.content.pm.ApplicationInfo
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -46,7 +48,7 @@ class CreateDiaryFragment : InjectionFragment(R.layout.add_diary_entry) {
         binding = AddDiaryEntryBinding.inflate(inflater, container, false)
 
         // Initialize Places API with API Key
-        Places.initialize(requireContext(), "AIzaSyDvj-0jj3YNOjkX62gBdv7NxcFGgjGRfio")
+        Places.initialize(requireContext(), getApiKey())
 
         val autocompleteFragment =
             childFragmentManager.findFragmentById(R.id.autocomplete_fragment)
@@ -188,6 +190,13 @@ class CreateDiaryFragment : InjectionFragment(R.layout.add_diary_entry) {
         datePickerDialog.show()
     }
 
+    private fun getApiKey(): String {
+        // Initialize Places API with API Key
+        val appContext = this.requireContext()
+        val applicationInfo: ApplicationInfo = appContext.packageManager
+            .getApplicationInfo(appContext.packageName, PackageManager.GET_META_DATA)
+      return applicationInfo.metaData["GOOGLE_API_KEY"].toString()
+    }
     private fun updateDateEditText() {
         val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
         val selectedDate = dateFormat.format(calendar.time)

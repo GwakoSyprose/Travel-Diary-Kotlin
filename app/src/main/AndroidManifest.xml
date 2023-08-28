@@ -42,6 +42,9 @@
             android:exported="true"
             >
         </activity>
+        <meta-data
+            android:name="GOOGLE_API_KEY"
+        android:value="${API_KEY_NAME}"/>
     </application>
 
 </manifest>
