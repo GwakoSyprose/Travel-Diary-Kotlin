@@ -65,6 +65,4 @@ class MainActivity : AppCompatActivity(), DIAware {
             Toast.makeText(this, "Error signing out", Toast.LENGTH_SHORT).show()
         }
     }
-
-    fun onAddImageClick(view: View) {}
 }

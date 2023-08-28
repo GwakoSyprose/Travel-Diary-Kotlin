@@ -40,11 +40,4 @@ override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
     diTrigger?.trigger()
 }
-
-//    protected fun setUpGoBackAction(action: () -> Unit = { findNavController().popBackStack() }) {
-//        view?.findViewById<TextView>(R.id.goBack)?.setOnClickListener {
-//            action()
-//        }
-//    }
-
 }
