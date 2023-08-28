@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/actionButtonStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:paddingStart="0dp"
+    android:paddingEnd="24dp">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logoHolder"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:src="@drawable/ic_logo" />-->
+
+    <TextView
+        android:id="@+id/provider_code_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:text="My Travel Diary"
+      />
+
+
+</FrameLayout>

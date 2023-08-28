@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "907864720506",
+    "project_id": "mytravelapp-b6c3f",
+    "storage_bucket": "mytravelapp-b6c3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907864720506:android:9c8646ecb30645556a27c3",
+        "android_client_info": {
+          "package_name": "com.example.mytraveldiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907864720506-o9tsvuhmsu6npdu0a0csle5cjjiovnv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvj-0jj3YNOjkX62gBdv7NxcFGgjGRfio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907864720506-o9tsvuhmsu6npdu0a0csle5cjjiovnv1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

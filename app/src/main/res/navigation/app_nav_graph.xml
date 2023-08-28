@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/diariesListFragment">
+
+    <fragment
+        android:id="@+id/addDiaryFragment"
+        android:name="com.example.mytraveldiary.ui.create.CreateDiaryFragment"
+        android:label="AddDiaryFragment"
+        tools:layout="@layout/add_diary_entry">
+
+        <action
+            android:id="@+id/actionAddDiaryToListDiaries"
+            app:destination="@id/diariesListFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/diariesListFragment"
+        android:name="com.example.mytraveldiary.ui.details.DiaryListFragment"
+        android:label="DiaryListFragment"
+        tools:layout="@layout/diary_entries_list">
+
+        <action
+            android:id="@+id/actionDiariesListToAddDiary"
+            app:destination="@id/addDiaryFragment" />
+
+        <action
+            android:id="@+id/actionDiariesListToDiaryDetails"
+            app:destination="@id/diaryDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/diaryDetailFragment"
+        android:name="com.example.mytraveldiary.ui.details.DiaryDetailsFragment"
+        android:label="DiaryDetailsFragment"
+        tools:layout="@layout/diary_details">
+
+        <action
+            android:id="@+id/actionDetailsToDiaryList"
+            app:destination="@id/diariesListFragment" />
+
+        <argument
+            android:name="diary"
+            app:argType="com.example.mytraveldiary.data.db.DiaryParcelable" />
+    </fragment>
+
+</navigation>

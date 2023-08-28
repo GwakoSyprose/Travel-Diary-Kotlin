@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- constraint layout width and height -->
+    <dimen name="use_constraints">0dp</dimen>
+
+    <!-- paddings -->
+    <dimen name="padding_0">0dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_24">16sp</dimen>
+
+
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+</resources>

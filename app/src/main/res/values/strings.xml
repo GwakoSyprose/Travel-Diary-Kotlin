@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MyTravelDiary</string>
+    <string name="add_word">Add word</string>
+    <string name="no_travel_diaries">Welcome, click add to add travel diaries.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="not_registered_yet_sign_up">Not Registered Yet, Sign Up!</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_registered_sign_in">Already Registered, Sign In!</string>
+    <string name="add_new_adventure">Add New Adventure</string>
+    <string name="title">Title</string>
+    <string name="date_of_travel">Date of Travel</string>
+    <string name="notes">Notes</string>
+    <string name="upload_images">Upload Images</string>
+    <string name="add">Add</string>
+</resources>
